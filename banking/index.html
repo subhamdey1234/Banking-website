@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        #logo img{
+width: 100px;
+height: 90px;
+border-radius: 50%;
+        }
+       .nav-item .nav-link{
+        margin-left: 6px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+    color: black;
+    font-size: 25px;
+    width: 150px;
+       }
+       .navbar-nav{
+        padding-right: 20%;
+display: flex;
+
+       }
+       nav{
+        background-image: linear-gradient(
+    120deg,
+    hsl(160, 79%, 42%),
+    hsl(275, 39%, 59%),hsl(164, 70%, 51%),
+    hsl(0, 31%, 74%)
+  );
+       }
+       .navbar-nav .nav-link:hover{
+color: rgb(255, 0, 0);
+scale: 1.2;
+       }
+#search input{
+    border-radius: 25px;
+    border: none;
+   width: 200px;
+}
+#search button{
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    background-color: #438151c4;
+  margin-right: 90px;
+}
+#search button:hover{
+    background-color:#ea0707;
+    transition: 2s;
+
+}
+.hero-img-container  img {
+  width: 600px;
+float: right;
+transform: translate(130%,-50%);
+ background-image: url("bg-intro-desktop.svg") ;
+border-radius: 25px;
+ background-repeat: no-repeat;
+
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ align-items:center ;
+float: left;
+height: 750px;
+margin-top: 40px;
+
+}
+.hero-text-container  h1 {
+  font-size: 75px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: hsl(233, 42%, 87%);
+  
+ text-align: center;
+  line-height: 1.1;
+  margin-top: 30px;
+}
+
+.hero-text-container  p {
+  color: hsl(235, 28%, 92%);
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+ }
+.hero-text-container  button {
+  padding: 12px 28px;
+  width: 500px;
+  border: none;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+    120deg,
+    hsl(205, 86%, 20%),
+    hsl(0, 25%, 30%)
+  );
+}
+.hero-text-container  button:hover{
+    background-image: linear-gradient(
+    120deg,
+    hsl(337, 84%, 47%),
+    hsl(175, 90%, 41%)
+  );
+    transition: 3s;
+}
+.container {
+  background-color: hsl(220, 16%, 96%);
+}
+
+#net{
+  color: rgba(86, 204, 149, 0.513);
+  overflow: hidden; 
+}
+    
+#bank{
+    color: rgba(86, 204, 149, 0.513);
+  overflow: hidden;  
+}
+#w{
+    text-align: center;
+    color: rgba(236, 46, 65, 0.847);
+    font-weight: 600;
+    
+    font-size: 60px;
+   text-decoration: underline;
+   font-variant: small-caps;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+#whatsapp{
+    width: 18rem;
+}
+.banking{
+    position: relative;
+}
+.card{
+    margin-top: 30px;
+    height: 360px;
+    left: 50px;
+}
+.card-body h5{
+text-align: center;
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+text-decoration: solid underline;
+color: black;
+}
+#wp{
+    border-radius: 26px;
+    background-color: rgb(116, 186, 30);
+    color: black;
+    text-decoration: solid;
+    border: none;
+    width: 150px;
+    align-items: center;
+    height: 35px;
+    
+}
+.buttn{
+    text-align: center;
+}
+#wp:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 2s;
+    text-decoration: solid;
+    
+}
+.card-body:hover{
+    background-color: rgb(144, 228, 35);
+    color:black;
+    transition: 2s;
+}
+.card-body h5:hover{
+    
+    color: aliceblue;
+    transition: 2s;
+}
+#footer{
+    padding: 0 0 30px 0px;
+    color: rgb(243, 241, 241);
+    font-size: 14px;
+    background-color: rgb(37, 53, 46);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(37, 53, 46);
+    color: rgb(255, 246, 246);
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #37f630;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: rgb(241, 237, 237);
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: #55ff00;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: rgb(77, 1, 1);
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+#footer .credits a{
+    color: #ffffff;
+}
+@media screen and (max-width:500px) {
+  .hero-text-container{
+    text-align: center;
+    font-size: 18px;
+
+  }
+ .hero-img-container img{
+  height: 400px;
+  width: 440px;
+align-items: center;
+align-self: center;
+transform: translate(-2%,18%);
+ }
+  .banking{
+    margin-top: 300px;
+  }
+  .banking .card{
+    transform: translate(22%,5%);
+    height: 400px;
+    content: normal;
+
+  }
+  #w{
+ 
+    color: #ea0707;
+    font-variant: small-caps;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  #footer .footer-links{
+    text-align: center;
+   
+  }
+  #footer .footer-links h4{
+    font-size: 25px;
+  }
+  #footer .footer-links ul li a{
+    text-align: center;
+  }
+  #footer{
+    text-align: center;
+font-size: 15px;
+font-weight: 800;
+  }
+  .hero-text-container button{
+    width:250px;
+  }
+}
+
+  
+    </style>
+</head>
+<body style="background-color: black;">
+    <header>
+<nav class="navbar navbar-expand-lg" id="nav">
+<div class="container-fluid">
+    <a href="index.html" id="logo">
+        <img src="https://png.pngtree.com/png-vector/20190225/ourlarge/pngtree-concept-banking-logo-png-image_712958.jpg" alt="" srcset="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="menu.png" alt="" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="Services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    <li class="nav-item">
+                        <a href="Login.html" class="nav-link active">Login/Register</a>
+                        </li>
+
+</ul>
+<form class="d-flex" id="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</div></div>
+</nav></header>
+<div class="row">
+<header class="hero-section">
+    <div class="col">
+    <div class="hero-text-container">
+      <h1
+        >Online <span id="net">Net</span> Banking/<br />
+        digital <span id="bank">Banking</span></h1
+      >
+      <p
+        >Take your financial life online. Your easy bank account<br />
+        will be a one-stop-shop for spending,saving,<br />budgeting,investing,
+        and much more.</p
+      >
+      <button>Request Invite</button>
+      <div  class="hero-img-container">
+        <img id="img" src="image-mockups.png" alt="" /></div>
+      </div>
+    </div>
+   
+    </div>
+</header>
+  
+    </div>
+    
+
+<hr>
+<section class="banking">
+    <h1 class="ways" id="w">Ways To Bank</h1>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem
+            ;">
+                <img id="whatsapp" class="card-img-top" src="https://th.bing.com/th/id/OIP.IAgCz4RfObUBYDto3pl5SgHaET?pid=ImgDet&rs=1" alt="" srcset="">
+                <div class="card-body">
+                   <h5 >Whatsapp Banking</h5>
+                  <p>You Can Directly connect From Whatsapp.</p>
+                  <div class="buttn">
+                  <button id="wp">Whatsapp</button></div>       
+                </div>
+             </div>  </div>  
+     
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem
+                    ;">
+                        <img id="whatsapp" style="height: 165px;" class="card-img-top" src="https://th.bing.com/th/id/OIP.KzpLkdrNXSibFaZZIdKexgHaE8?pid=ImgDet&rs=1" alt="" srcset="">
+                        <div class="card-body">
+                           <h5 >Mobile Banking</h5>
+                           <p>You Can Directly connect From Mobile</p>
+                           <div class="buttn">
+                            <button id="wp">Download App</button></div>
+                         
+                           </div>
+                           </div> 
+</div>
+
+                           <div class="col-sm-3">
+                            <div class="card" style="width: 18rem
+                            ;">
+                                <img id="whatsapp" class="card-img-top" src="https://th.bing.com/th/id/OIP.vGjdHw9ry0TNJhzIN74sHAHaEV?pid=ImgDet&rs=1" alt="" srcset="">
+                                <div class="card-body">
+                                   <h5 >Upi Payments</h5>
+                                   <p>You Can Directly connect From Upi APPS</p>
+                           <div class="buttn">
+                            <button id="wp">Join UPI</button>
+                        </div>
+                         
+                        
+                                   </div>
+                                   </div>           
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem
+                    ;">
+                        <img id="whatsapp" style="height: 165px;" class="card-img-top" src="https://th.bing.com/th/id/OIP.6tC-BW8J2u6wUw-YQZUQ4QHaEo?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" srcset="">
+                        <div class="card-body">
+                           <h5 >Social media Banking</h5>
+                           <p>You Can Directly connect From Mobile</p>
+                           <div class="buttn">
+                            <button id="wp">Connect</button></div>
+                         
+                           </div>
+                        
+                           </div>           
+        </div>
+
+    </div>
+  
+        
+    
+        
+
+
+</section>
+</div>
+<br>
+<footer id="footer">
+    <div class="footer-top">
+      <div style="background-color: rgb(37, 53, 46);border-radius: 25px;" class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Net Banking</h3>
+            <p>
+              Umerkote <br>
+            Nabrangpur district <br>
+              Odisha <br>
+            </p>
+            <strong>Phone:</strong> +91 7894592274 <br>
+            <strong>Email:</strong> sdey06384@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+           </ul>
+          </div>
+
+
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+           <ul>
+            <li><a href="#">Net Banking</a></li>
+            <li><a href="#">Providing Loans</a></li>
+            <li><a href="#">Interest</a></li>
+            <li><a href="#">Fixed Diposit</a></li>
+            <li><a href="#">Atm</a></li>
+           </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div style="border-radius: 25px;    background-color: rgb(37, 53, 46);height: 25px;" class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Subham Dey</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Subham Dey</a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

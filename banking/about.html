@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        #logo img{
+width: 100px;
+height: 90px;
+border-radius: 50%;
+        }
+       .nav-item .nav-link{
+        margin-left: 6px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+    color: black;
+    font-size: 25px;
+    width: 150px;
+       }
+       .navbar-nav{
+        padding-right: 20%;
+display: flex;
+
+       }
+       nav{
+        background-image: linear-gradient(
+    120deg,
+    hsl(160, 79%, 42%),
+    hsl(275, 39%, 59%),hsl(164, 70%, 51%),
+    hsl(0, 31%, 74%)
+  );
+       }
+       .navbar-nav .nav-link:hover{
+color: rgb(255, 0, 0);
+scale: 1.2;
+       }
+#search input{
+    border-radius: 25px;
+    border: none;
+   width: 200px;
+}
+#search button{
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    background-color: #438151c4;
+  margin-right: 90px;
+}
+#search button:hover{
+    background-color:#ea0707;
+    transition: 2s;
+
+}
+#imager img{
+  width: 600px;
+  height: 500px;
+align-items: center;
+margin-left: 916px;
+transform: translateY(-70%);
+}
+#hp h1{
+  margin-right: 800px;
+  font-family: serif;text-align: center;
+  margin-top: 100px;
+   text-decoration: underline;
+   font-weight: bolder; 
+   color: aliceblue;
+   background-image: linear-gradient(to left, #d83481, #def454);
+color: transparent;
+background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 48px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+#hp p{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation-name:typing;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: monospace;
+margin-left: 10%;
+}
+@keyframes typing {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+#firstph{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+#secondph{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+#thirdph{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+ 
+}
+#thriple{
+ transform: translateY(-70%);
+ margin-top: 2px;
+}
+#firstph:hover{
+  scale: 1.15;
+  transition: 1s;
+}
+#secondph:hover{
+  scale: 1.15;
+  transition: 1s;
+}
+#thirdph:hover{
+  scale: 1.15;
+  transition: 1s;
+}
+.fir h1{
+margin-left: 80px;
+  font-family: serif;text-align: center;
+  margin-top: 100px;
+   text-decoration: underline;
+   font-weight: bolder; 
+   color: aliceblue;
+   background-image: linear-gradient(to left, #d83481, #def454);
+color: transparent;
+background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 60px;
+  font-variant: small-caps;
+  font-weight: bold;
+  transform: translateY(-500%);
+}
+#footer{
+    padding: 0 0 30px 0px;
+    color: rgb(243, 241, 241);
+    font-size: 14px;
+    background-color: rgb(37, 53, 46);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(37, 53, 46);
+    color: rgb(255, 246, 246);
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #37f630;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: rgb(241, 237, 237);
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: #55ff00;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: rgb(77, 1, 1);
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+#footer .credits a{
+    color: #ffffff;
+}
+</style>
+
+   
+</head>
+<body style="background-color: black;">
+  <header>
+      <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+          <a href="index.html" id="logo">
+              <img src="https://png.pngtree.com/png-vector/20190225/ourlarge/pngtree-concept-banking-logo-png-image_712958.jpg" alt="" srcset="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><img src="menu.png" alt="" width="30px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="Services.html" class="nav-link active">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="About.html" class="nav-link active">About</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="contact.html" class="nav-link active">Contact</a>
+                              </li>
+                          <li class="nav-item">
+                              <a href="Login.html" class="nav-link active">Login/Register</a>
+                              </li>
+      
+      </ul>
+      <form class="d-flex" id="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div></div>
+      </nav></header>
+
+<div class="row">
+<div id="hp" class="col">
+  <h1>About   Us</h1>
+  <br>
+  <div>
+  <p>Online banking can provide greater accessibility for users who may have mobility or other challenges that<br> make traditional banking methods more difficult. This section may describe how the platform is designed to <br>be accessible to all users. <br>
+   <br>
+    Online banking provides users with the ability to manage their accounts from anywhere with an internet<br> connection.<br> This section may describe the convenience of online banking and how it can save users time<br> and hassle.
+ <br><br>
+ We always aim at providing superior, proactive banking service to niche market globally, while <br>cost effective and responsive services
+  </p>
+</div></div>
+<div id="imager" class="col">
+  <img  src="logoimg.png" alt="" srcset="">
+</div>
+</div>
+<div id="unique" class="fir">
+<h1>Availablity</h1>
+</div>
+<div id="thriple" class="row">
+  <div style="text-align: center;" class="col">
+    <img id="firstph" src="https://i1.wp.com/www.titanui.com/wp-content/uploads/2018/08/22/3D-WhatsApp-Icon-PSD-min.jpg?fit=519%2C538&ssl=1" alt="" srcset="">
+  </div>
+  <div style="text-align: center;" class="col">
+    <img id="secondph" src="https://www.peninsularcylinders.com/wp-content/uploads/linkedin-icon.jpg" alt="" srcset="">
+  </div>
+  <div style="text-align: center;" class="col">
+    <img id="thirdph" src="https://th.bing.com/th/id/R.1591954549cb4f45870949c4de53cdaf?rik=RcEP3rK4%2bsT4TA&riu=http%3a%2f%2fumaar.github.io%2fexperiments%2fgithub-3d-logo%2frender-2.jpg&ehk=VpOrW33N7blW8q7XMTSvR8krYhTyJ7ruH%2f%2fmUKlWXYM%3d&risl=&pid=ImgRaw&r=0" alt="" srcset="">
+  </div>
+
+</div>
+<footer id="footer">
+  <div class="footer-top">
+    <div style="background-color: rgb(37, 53, 46);border-radius: 25px;" class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Net Banking</h3>
+          <p>
+            Umerkote <br>
+          Nabrangpur district <br>
+            Odisha <br>
+          </p>
+          <strong>Phone:</strong> +91 7894592274 <br>
+          <strong>Email:</strong> sdey06384@.com <br>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Usefull Links</h4>
+         <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+         </ul>
+        </div>
+
+
+
+       
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+
+         <ul>
+          <li><a href="#">Net Banking</a></li>
+          <li><a href="#">Providing Loans</a></li>
+          <li><a href="#">Interest</a></li>
+          <li><a href="#">Fixed Diposit</a></li>
+          <li><a href="#">Atm</a></li>
+         </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+          <div class="socail-links mt-3">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div style="border-radius: 25px;    background-color: rgb(37, 53, 46);height: 25px;" class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Subham Dey</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="#">Subham Dey</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
